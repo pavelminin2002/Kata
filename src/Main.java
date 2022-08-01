@@ -4,7 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(calc("X * VII"));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter expression: ");
+        String line = scanner.nextLine();
+        scanner.close();
+        System.out.println(calc(line));
     }
 
     final static List<String> roman = List.of("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
